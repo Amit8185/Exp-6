@@ -16,6 +16,23 @@
         <div id="weather-info"></div>
         <div id="hourly-forecast"></div>
     </div>
-    <script src="script.js"></script>
+   <script>
+  // Load Google Tag Manager script
+  (function() {
+    var gtagScript = document.createElement('script');
+    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-BDHLRV15W3';
+    gtagScript.async = true;
+    document.head.appendChild(gtagScript);
+    
+    // Initialize dataLayer and gtag function
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    // Configure Google Analytics
+    gtag('config', 'G-BDHLRV15W3');
+  })();
+</script>
+
 </body>
 </html>
